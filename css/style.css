@@ -18,5 +18,118 @@ img{
 
 
 /******************************************
-/* ADDITIONAL STYLES
+/* BASE STYLES
 /*******************************************/
+
+body {
+  font-family: Helvetica, san-serif;
+  margin: 10%;
+}
+main{
+  margin-bottom: 12%;
+}
+section{
+ margin-bottom: 5%; 
+}
+
+div{
+  margin-bottom: 2.5%;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+p{
+
+}
+span{
+
+}
+a {
+  text-decoration: none;
+}
+
+
+/******************************************
+/* Section STYLES
+/*******************************************/
+
+
+/* Intro */
+/* -------------- */
+.intro-container{
+  width: 100%;
+}
+.header-graphic{
+  margin-bottom: 7%;
+}
+
+.intro-p{
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.p-link{
+   font-weight: 600; 
+}
+
+/* Intro - sub */
+/* -------------- */
+.client-contact-wrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+
+/* Black Client logos */
+/* -------------- */
+.logos-container{
+  width: 50%;
+  padding-right: 15%;
+}
+.logo-list{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.corporate-client{
+ 
+}
+
+
+
+
+/* intro-contact */
+/* -------------- */
+.contact-container{
+  width: 50%;
+}
+.contact-list{
+  display: flex;
+}
+
+
+/* Projects */
+/* -------------- */
+.projects-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.project-div{
+  width: 50%;
+}
