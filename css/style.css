@@ -227,7 +227,7 @@ p {
   justify-content: space-between;
   padding: 3% 0 10% 0;
   font-weight: 600;
-  font-size: var(--fs-1);
+  font-size: var(--fs-2);
 }
 .material-symbols-outlined.project-icon.arrow{
   margin: 0rem;
