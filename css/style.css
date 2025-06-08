@@ -157,6 +157,7 @@ p {
   line-height: 1.5;
   
 }
+/* Diamon icon */
 .corporate-client.logo{
   padding: 0 1rem 1rem 0rem;
   
@@ -174,6 +175,7 @@ p {
   margin-bottom: var(--section-gap);
   padding-left: calc(1 * var(--icon-gutter))
 }
+/* Star icon */
 .material-symbols-outlined.section-logo.star{
   margin-left: 0;
   margin-left: calc(-1 * var(--icon-gutter));
@@ -272,16 +274,27 @@ p {
  
   }
   /* icon adjustments */
+  /* ------------------- */
+  .material-symbols-outlined.section-icon.subject{
+  /* resolves the icon sitting too high */
+    padding-top: .75rem;
+  }
   /* star */
   .material-symbols-outlined.section-logo.star{
   margin-left: calc(-1 * var(--icon-gutter));
   position: relative;
   padding-top: .25rem;
   }
+  /* diamond */
+  .corporate-client.logo{
+    padding-top: 0rem;
+  
+  }
   /* smiley */
   .material-symbols-outlined.satisfied{
     padding-top: .25rem;
   }
+   
   .clients-wrapper,
   .projects-wrapper{
     flex-direction: column;
