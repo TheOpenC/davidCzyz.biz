@@ -289,7 +289,7 @@ p {
 
 }
 
-@media (max-width: 750px){
+@media (max-width: 850px){
   :root{
   --fs-2: 1.5rem;
   /* h1 */
