@@ -299,6 +299,7 @@ p {
   .project-img{
     height: 30vh;
     min-height: 300px;
+    max-height: 500px;
   }
   .project-text{
     padding: 3% 0 5% 0;
