@@ -183,6 +183,7 @@ p {
   display: flex;
   line-height: 1.5;
   font-weight: 600;
+  font-size: var(--fs-3)
 }
 .contact-list a{
   color: black;
