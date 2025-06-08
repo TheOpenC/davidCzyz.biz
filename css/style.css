@@ -34,7 +34,7 @@
   /* h5 */
   --fs-4: 1.266rem;
   /* h6 */
-  --fs-3: 1.25rem;
+  --fs-3: 1rem;
   /* captioning */
   --fs-1: .9rem;
 }
@@ -261,7 +261,7 @@ p {
   /* h5 */
   --fs-4: 1.766rem;
   /* h6 */
-  --fs-3: 1.75rem;
+  --fs-3: 1.35rem;
   /* captioning */
   --fs-1: 1rem;
   }
