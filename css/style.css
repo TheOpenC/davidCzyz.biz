@@ -26,7 +26,7 @@
   /* h1 */
   --fs-8: 2.027rem;
    /* h2 */
-  --fs-7: 2.027rem;
+  --fs-7: 1.802rem;
   /* h3 */
   --fs-6: 1.602rem;
   /* h4 */
@@ -126,7 +126,7 @@ p {
 
 /* The intro paragraph is being treated as h2 */
 .intro-p {
-  font-size: 1.802rem;
+  font-size: var(--fs-7);
   line-height: 1.35;
   margin: 0;
 }
@@ -302,11 +302,12 @@ p {
   .project-div{
     width: 100%;
     height: 40vh;
+    margin-bottom: var(--section-gap)
   }
   .project-img{
-    height: 30vh;
+    height: 20vh;
     min-height: 300px;
-    max-height: 500px;
+    max-height: 400px;
   }
   .project-text{
     padding: 3% 0 5% 0;
