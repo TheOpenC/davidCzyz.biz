@@ -7,8 +7,8 @@
   --icon-size: 0rem;
   --icon-gap: 0;
   /* --icon-vertical-offset: 2%; */
-  --section-gap: 2rem;
-  --icon-gutter: 3rem;
+  --section-gap: 3rem;
+  --icon-gutter: 2.5rem;
 
   /* adjusting to get the icon and the right most elements to work in sync */
 }
@@ -41,7 +41,7 @@ span {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -54,9 +54,7 @@ h2 {
   font-size: var(--icon-size);
   line-height: 1;
   display: inline-block;
-  
   position: relative;
-  
   margin-left: calc(-1 * var(--icon-gutter))
 }
 
@@ -68,14 +66,18 @@ h2 {
 .intro-p-icon-container {
   display: grid;
   grid-template-columns: var(--icon-size) 1fr;
-
   column-gap: var(--icon-gap);
   margin-bottom: var(--section-gap);
+}
+.material-symbols-outlined.section-icon.subject{
+  /* resolves the icon sitting too high */
+  padding-top: .25rem;
+   
 }
 
 .intro-p {
   font-size: 1.75rem;
-  line-height: 1.2;
+  line-height: 1.35;
   margin: 0;
 }
 .p-link {
@@ -87,8 +89,7 @@ h2 {
 .clients-wrapper {
   display: flex;
   gap: 2%;
-  width: 100%
-
+  width: 100%;
 }
 .logos-container {
     display: grid;
@@ -103,15 +104,36 @@ h2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  line-height: 2;
+  line-height: 1.5;
+  
+}
+.corporate-client.logo{
+  padding: 0 1rem 1rem 0rem;
+}
+.logo a{
+  color:black;
+  font-weight: 600
 }
 .contact-container {
   width: 50%;
-  padding-left: 4%
+  display: grid;
+  grid-template-columns: var(--icon-size) 1fr;
+  column-gap: var(--icon-gap);
+  margin-bottom: var(--section-gap);
+  padding-left: calc(1 * var(--icon-gutter))
+}
+.material-symbols-outlined.section-logo.star{
+  margin-left: 0;
+  margin-left: calc(-1 * var(--icon-gutter));
   
 }
 .contact-list {
   display: flex;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.contact-list a{
+  color: black;
 }
 
 /* Projects Section heading with icon */
@@ -136,12 +158,16 @@ h2 {
   width: 100%;
 }
 .project-div {
-  width: 45%;
+  width: 48%;
 }
 .project-img {
   height: 300px;
   outline: 2px dotted gray;
   border-radius: 1%;
+}
+.project-name{
+  font-weight: 400;
+  color: gray
 }
 .project-img a {
   padding: 2.5%;
@@ -149,7 +175,15 @@ h2 {
 .project-text {
   display: flex;
   justify-content: space-between;
-  padding: 1.5% 0;
+  padding: 3% 0 10% 0;
   font-weight: 600;
   font-size: 0.9rem;
+}
+.material-symbols-outlined.project-icon.arrow{
+  margin: 0rem;
+  color: black;
+  font-size: 1rem;
+  margin-top: -.3rem;
+  padding-left: .25rem;
+  
 }
