@@ -159,10 +159,12 @@ p {
 }
 .corporate-client.logo{
   padding: 0 1rem 1rem 0rem;
+  
 }
-.logo a{
+.logo span{
   color:black;
-  font-weight: 600
+  font-weight: 600;
+  font-size: var(--fs-3)
 }
 .contact-container {
   width: 50%;
@@ -192,6 +194,9 @@ p {
   grid-template-columns: var(--icon-size) 1fr;
   gap: var(--icon-gap);
   margin-bottom: var(--section-gap);
+}
+.material-symbols-outlined.satisfied{
+  padding-top: .25rem;
 }
 
 
