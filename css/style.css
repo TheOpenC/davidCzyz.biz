@@ -4,10 +4,18 @@
 }
 
 :root {
+  /* icon size increases / decreases the icon size. 0rem means it's native font size - 16.2px */
   --icon-size: 0rem;
-  --icon-gap: 0;
-  /* --icon-vertical-offset: 2%; */
+  
+  /* icon gap pushes the rightmost element to the right this amount. icon stays stationary in the left margin  */
+  --icon-gap: 0rem;
+
+  /* --icon-vertical-offset: 2%; currently unused.*/
+
+  /* section gap controls the gap below each major section. Increase adds more space */
   --section-gap: 3rem;
+
+  /* icon gutter controls the icon offset from the rightmost element */
   --icon-gutter: 2.5rem;
 
   /* adjusting to get the icon and the right most elements to work in sync */
@@ -16,6 +24,10 @@
 body {
   font-family: Helvetica, sans-serif;
   margin: 10%;
+}
+.page-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 main {
@@ -40,9 +52,30 @@ span {
   color: rgb(240, 183, 181);
 }
 
+h1 {
+  font-size: 2.027rem 
+}
+
 h2 {
-  font-size: 2rem;
+  font-size: 2.027rem;
   font-weight: 600;
+}
+h3{
+  font-size: 1.602rem;
+
+}
+h4{
+  font-size: 1.424rem;
+}
+
+h5{
+  font-size: 1.266rem;
+}
+h6{
+  font-size: 1.25rem;
+}
+p {
+  font-size: 1rem;
 }
 
 /* Material icons base */
@@ -75,8 +108,9 @@ h2 {
    
 }
 
+/* The intro paragraph is being treated as h2 */
 .intro-p {
-  font-size: 1.75rem;
+  font-size: 1.802rem;
   line-height: 1.35;
   margin: 0;
 }
@@ -102,7 +136,7 @@ h2 {
 }
 .logo-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   line-height: 1.5;
   
@@ -187,3 +221,62 @@ h2 {
   padding-left: .25rem;
   
 }
+
+
+/* ---------------------- */
+/* breakpoints */
+/* ---------------------- */
+@media (max-width: 1050px) {
+  body{
+    margin: 12%;
+  }
+  .clients-wrapper{
+    flex-direction: column;
+  }
+  .contact-container{
+    width: 100%;
+    grid-template-columns: var(--icon-size) 1fr;
+    column-gap: var(--icon-gap);
+    margin-bottom: var(--section-gap);
+    padding-left: 0;
+}
+  .contact-list{
+    margin: 0;
+  } 
+  .material-symbols-outlined.section-logo.star{
+  margin-left: calc(-1 * var(--icon-gutter));
+  position: relative;
+  
+}
+  .logos-container{
+    padding-right: 0;
+    width: 85%;
+  }
+  .logo-list{
+    justify-content: flex-start;
+
+  }
+
+}
+
+@media (max-width: 750px){
+  .logos-container{
+    width: 100%;
+  }
+  .material-symbols-outlined{
+    visibility: collapse;
+  }
+  .intro-p{
+    font-size: 1.424rem;
+  }
+  
+}
+
+@media (max-width: 700px) {
+  
+}
+
+/* Margins */
+
+
+/* Structural */
