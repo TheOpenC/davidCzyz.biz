@@ -19,6 +19,24 @@
   --icon-gutter: 2.5rem;
 
   /* adjusting to get the icon and the right most elements to work in sync */
+
+  
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 2.027rem;
+   /* h2 */
+  --fs-7: 2.027rem;
+  /* h3 */
+  --fs-6: 1.602rem;
+  /* h4 */
+  --fs-5: 1.424rem;
+  /* h5 */
+  --fs-4: 1.266rem;
+  /* h6 */
+  --fs-3: 1.25rem;
+  /* captioning */
+  --fs-1: .75rem;
 }
 
 body {
@@ -53,29 +71,30 @@ span {
 }
 
 h1 {
-  font-size: 2.027rem 
+  font-size: var(--fs-8) 
 }
 
 h2 {
-  font-size: 2.027rem;
+  font-size: var(--fs-7);
   font-weight: 600;
 }
 h3{
-  font-size: 1.602rem;
+  font-size: var(--fs-6);
+
 
 }
 h4{
-  font-size: 1.424rem;
+  font-size: var(--fs-5);
 }
 
 h5{
-  font-size: 1.266rem;
+  font-size: var(--fs-4);
 }
 h6{
-  font-size: 1.25rem;
+  font-size: var(--fs-3);
 }
 p {
-  font-size: 1rem;
+  font-size: var(--fs-2);
 }
 
 /* Material icons base */
@@ -211,7 +230,7 @@ p {
   justify-content: space-between;
   padding: 3% 0 10% 0;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: var(--fs-2);
 }
 .material-symbols-outlined.project-icon.arrow{
   margin: 0rem;
@@ -271,8 +290,22 @@ p {
 }
 
 @media (max-width: 750px){
-  html {
-    font-size: 20px;
+  :root{
+  --fs-2: 1.5rem;
+  /* h1 */
+  --fs-8: 2.527rem;
+   /* h2 */
+  --fs-7: 2.527rem;
+  /* h3 */
+  --fs-6: 2.102rem;
+  /* h4 */
+  --fs-5: 1.924rem;
+  /* h5 */
+  --fs-4: 1.766rem;
+  /* h6 */
+  --fs-3: 1.75rem;
+  /* captioning */
+  --fs-1: .75rem;
   }
   .logos-container{
     width: 100%;
@@ -280,9 +313,7 @@ p {
   .material-symbols-outlined{
     visibility: collapse;
   }
-  .intro-p{
-    font-size: 1.602rem;
-  }
+ 
   
 }
 
