@@ -90,7 +90,7 @@ h6{
   font-size: var(--fs-3);
 }
 p {
-  font-size: var(--fs-2);
+  font-size: var(--fs-1);
 }
 
 
@@ -288,7 +288,7 @@ p {
 
 @media (max-width: 850px){
   :root{
-  --fs-2: 1.5rem;
+  --fs-2: 1.25rem;
   /* h1 */
   --fs-8: 2.527rem;
    /* h2 */
@@ -302,7 +302,7 @@ p {
   /* h6 */
   --fs-3: 1.75rem;
   /* captioning */
-  --fs-1: .9rem;
+  --fs-1: 1rem;
   }
   .logos-container{
     width: 100%;
