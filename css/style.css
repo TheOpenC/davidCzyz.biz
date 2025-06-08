@@ -288,6 +288,7 @@ p {
   .material-symbols-outlined.section-logo.star{
   margin-left: calc(-1 * var(--icon-gutter));
   position: relative;
+  padding-top: .25rem;
   
 }
   .logos-container{
