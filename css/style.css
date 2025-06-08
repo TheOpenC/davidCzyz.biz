@@ -13,7 +13,7 @@
   /* --icon-vertical-offset: 2%; currently unused.*/
 
   /* section gap controls the gap below each major section. Increase adds more space */
-  --section-gap: 3rem;
+  --section-gap: 3.125rem;
 
   /* icon gutter controls the icon offset from the rightmost element */
   --icon-gutter: 2.5rem;
@@ -195,7 +195,7 @@ p {
   width: 48%;
 }
 .project-img {
-  height: 300px;
+  height: 30vh;
   outline: 2px dotted gray;
   border-radius: 1%;
 }
@@ -230,7 +230,8 @@ p {
   body{
     margin: 12%;
   }
-  .clients-wrapper{
+  .clients-wrapper,
+  .projects-wrapper{
     flex-direction: column;
   }
   .contact-container{
@@ -255,6 +256,16 @@ p {
   .logo-list{
     justify-content: flex-start;
 
+  }
+  .project-div{
+    width: 100%;
+    height: 45vh;
+  }
+  .project-img{
+    height: 35vh;
+  }
+  .project-text{
+    padding: 3% 0 5% 0;
   }
 
 }
