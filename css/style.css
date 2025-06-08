@@ -317,17 +317,18 @@ p {
   .logo-list{
     justify-content: flex-start;
   }
+  /* adjust the min-height to change the limit between projects.  */
   .project-div{
     width: 100%;
     height: 40vh;
-    min-height: 350px;
+    min-height: 330px;
     max-height: 500px;
     margin-bottom: var(--section-gap)
   }
+  /* increasing max-height allows the sequential image to fill the space left by the div above. Change the vh height if you want a wider aspect ratio like David's sketch.  */
   .project-img{
-    height: 30vh;
-    /* min-height: 300px; */
-    max-height: 400px;
+    height: 35vh;
+    max-height: 450px;
   }
   .project-text{
     padding: 3% 0 5% 0;
