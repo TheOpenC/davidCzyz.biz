@@ -1,197 +1,155 @@
-/******************************************
-/* CSS
-/*******************************************/
-
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img{
+:root {
+  --icon-size: 0rem;
+  --icon-gap: 0;
+  /* --icon-vertical-offset: 2%; */
+  --section-gap: 2rem;
+  --icon-gutter: 3rem;
+
+  /* adjusting to get the icon and the right most elements to work in sync */
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 10%;
+}
+
+main {
+  margin-bottom: 12%;
+}
+
+section {
+  margin-bottom: var(--section-gap)
+}
+
+img {
   display: block;
   margin: 0 auto;
   width: 25%;
 }
 
-
-/******************************************
-/* BASE STYLES
-/*******************************************/
-:root {
-  --icon-size: .5rem;
-}
-
-body {
-  font-family: Helvetica, san-serif;
-  margin: 10%;
-}
-main{
-  margin-bottom: 12%;
-}
-section{
- margin-bottom: 5%; 
-}
-.heading-container{
-  padding-bottom: .5rem;
-}
-
-div{
-  margin-bottom: 2.5%;
-}
-h2 {
-  font-size: 1.75rem;
-  font-weight: 600
-}
-h3{
-
-}
-h4{
-
-}
-h5{
-
-}
-h6{
-
-}
-p{
-
-}
-span{
-  color: rgb(240 183 181);
-}
 a {
   text-decoration: none;
 }
 
-.heading-container{
-  position: relative;
-  align-items: center;
+span {
+  color: rgb(240, 183, 181);
 }
 
+h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 
-/* icons */
-/* .material-symbols-outlined {
-  color: rgb(240 183 181);
-  font-size: 24px;
-  vertical-align: middle;
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 10;
-} */
-
-
-.section-icon{
+/* Material icons base */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-style: normal;
+  font-weight: normal;
   font-size: var(--icon-size);
-  position:absolute;
-  left: -2.5rem;
-  top: 30%;
-  transform: translateY(-50%);
-  color: rgb(240 183 181);
-   font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 10;
+  line-height: 1;
+  display: inline-block;
+  
+  position: relative;
+  
+  margin-left: calc(-1 * var(--icon-gutter))
 }
 
-
-/******************************************
-/* Section STYLES
-/*******************************************/
-
-
-/* Intro */
-/* -------------- */
-.intro-container{
-  width: 100%;
-}
+/* David logo header */
 .header-graphic{
-  margin-bottom: 7%;
+  margin-bottom:var(--section-gap);
+}
+/* Intro Paragraph with icon */
+.intro-p-icon-container {
+  display: grid;
+  grid-template-columns: var(--icon-size) 1fr;
+
+  column-gap: var(--icon-gap);
+  margin-bottom: var(--section-gap);
 }
 
-.intro-p{
+.intro-p {
   font-size: 1.75rem;
   line-height: 1.2;
+  margin: 0;
 }
-.p-link{
-   font-weight: 600; 
-   color: rgb(240 183 181)
+.p-link {
+  font-weight: 600;
+  color: rgb(240, 183, 181);
 }
 
-/* Intro - sub */
-/* -------------- */
-.client-contact-wrapper{
+/* Client logos and contact */
+.clients-wrapper {
+  display: flex;
+  gap: 2%;
+  width: 100%
+
+}
+.logos-container {
+    display: grid;
+    grid-template-columns: var(--icon-size) 1fr;
+    column-gap: var(--icon-gap);
+    margin-bottom: var(--section-gap);
+    width: 50%;
+    padding-right: 10%;
+    
+}
+.logo-list {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-}
-
-
-
-/* Black Client logos */
-/* -------------- */
-.logos-container{
-  width: 50%;
-  padding-right: 15%;
-}
-.logo-list{
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  align-content: flex-start;
+  flex-wrap: wrap;
   line-height: 2;
 }
-.corporate-client{
- 
-}
-
-
-
-
-/* intro-contact */
-/* -------------- */
-.contact-container{
+.contact-container {
   width: 50%;
+  padding-left: 4%
+  
 }
-.contact-list{
+.contact-list {
   display: flex;
 }
 
+/* Projects Section heading with icon */
+.section-heading {
+  display: grid;
+  grid-template-columns: var(--icon-size) 1fr;
+  gap: var(--icon-gap);
+  margin-bottom: var(--section-gap);
+}
 
-/* Projects */
-/* -------------- */
-.projects-wrapper{
+
+
+/* Project grid */
+.project-section-container{
+  width: 100%;
+}
+.projects-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
-  
+  width: 100%;
 }
-.project-div{
-  width: 48%;
+.project-div {
+  width: 45%;
 }
-
-.project-img{
+.project-img {
   height: 300px;
   outline: 2px dotted gray;
   border-radius: 1%;
 }
-
-.project-img a{
+.project-img a {
   padding: 2.5%;
-  
 }
-.project-text{
-display: flex;
-justify-content: space-between;
-padding: 1.5% 0;
-font-weight: 600;
-font-size: .9rem;
+.project-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 0;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
