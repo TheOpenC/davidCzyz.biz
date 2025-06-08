@@ -157,9 +157,9 @@ p {
   line-height: 1.5;
   
 }
-/* Diamon icon */
+/* Diamond icon */
 .corporate-client.logo{
-  padding: 0 1rem 1rem 0rem;
+  padding: .125rem 1rem 1rem 0rem;
   
 }
 .logo span{
@@ -287,7 +287,7 @@ p {
   }
   /* diamond */
   .corporate-client.logo{
-    padding-top: 0rem;
+    margin-top: -.25rem;
   
   }
   /* smiley */
