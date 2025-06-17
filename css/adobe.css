@@ -1,6 +1,17 @@
 /* ===================== */
 /* Adobe Page*/
 /* ===================== */
+
+html {
+    background-color: black;
+}
 .page-wrapper-adobe{
-  background-color: black;
+  background-color: white;
+}
+
+.images-section-wrapper{
+    margin: 0;
+    background-color: white;
+    height: 200px;
+    width: 100vw
 }
