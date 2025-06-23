@@ -20,6 +20,10 @@
 
   /* adjusting to get the icon and the right most elements to work in sync */
 
+  /* fluid gap & height bounds for corporate logos */
+  --logo-gap: clamp(.75rem, 2vw, 1.75rem);
+  --logo-height: clamp(32px, 4vw, 64px);
+
   
   /* p */
   --fs-2: 1rem;
@@ -41,10 +45,12 @@
 
 body {
   font-family: Helvetica, sans-serif;
-  margin: 10%;
+  margin: 5%;
+  /* was 10% */
 }
 .page-wrapper{
-  max-width: 1100px;
+  max-width: 1300px;
+  /* was max-width 1100px */
   margin: 0 auto;
 }
 
@@ -56,11 +62,11 @@ section {
   margin-bottom: var(--section-gap)
 }
 
-img {
+/* img {
   display: block;
   margin: 0 auto;
   width: 25%;
-}
+} */
 
 a {
   text-decoration: none;
@@ -135,40 +141,94 @@ p {
   color: rgb(240, 183, 181);
 }
 
+
+/* Diamond icon */
+/* no change to the diamond icon */
+
+
+
 /* Client logos and contact */
 .clients-wrapper {
   display: flex;
-  gap: 2%;
   width: 100%;
+  align-items: flex-start;
 }
-.logos-container {
-    display: grid;
-    grid-template-columns: var(--icon-size) 1fr;
-    column-gap: var(--icon-gap);
-    margin-bottom: var(--section-gap);
-    width: 50%;
-    padding-right: 10%;
-    
+/* the whole block that contains the diamond + the three <ul> rows */
+.logos-container{
+  display: grid;
+  /* 1st col is “visual only” (0 px), 2nd col is everything else  */
+  grid-template-columns: var(--icon-size) 1fr;   /* --icon-size is 0 rem */
+  column-gap: var(--icon-gap);                   /* keeps left column    */
+ 
 }
-.logo-list {
+
+
+/* 2 ─ add the same spacing *only* in front of every UL except the first */
+.logos-container ul{
+  grid-column: 2;
+  margin-top: var(--logo-gap - 1rem);
+  list-style: none;
+  padding-right: 6rem;
+}
+.logos-container ul:first-of-type{
+  margin-top: -.75rem; 
+}
+
+
+
+
+.logos-container, 
+.contact-container{
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-width: 0;
+}
+
+
+.logo-row {
+  /* flex layout */
+  width: 100%;
+  
   display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  line-height: 1.5;
-  
+  justify-content: space-between;
+  gap: var(--logo-gap);
 }
-/* Diamond icon */
-.corporate-client.logo{
-  padding: .125rem 1rem 1rem 0rem;
-  
+
+.logo-row img{
+  height: var(--logo-height);
+  max-width: 100%;
+  width: auto;
+  display: block;
 }
-.logo span{
+.logo-row li,
+.logo-row img{
+  min-width: 0;
+}
+
+
+/* ------------------------- */
+/* Specific logo adjustments */
+/* ------------------------- */
+li.amazon-logo {
+  padding-top: .65rem;
+}
+
+li.cambells-logo{
+  padding-top: .25rem;
+}
+li.champion-logo{
+  padding-top: .35rem;
+}
+
+
+/* replaced with svg logos */
+/* .logo span{
   color:black;
   font-weight: 600;
   font-size: var(--fs-3)
-}
+} */
 .contact-container {
-  width: 50%;
+  max-width: 50%;
   display: grid;
   grid-template-columns: var(--icon-size) 1fr;
   column-gap: var(--icon-gap);
@@ -217,7 +277,7 @@ p {
   width: 48%;
 }
 .project-img {
-  height: 30vh;
+  height: 35vh;
   max-height: 400px;
   min-height: 300px;
   outline: 2px dotted gray;
