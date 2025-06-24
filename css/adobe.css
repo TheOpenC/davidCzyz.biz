@@ -1,17 +1,76 @@
 /* ===================== */
 /* Adobe Page*/
 /* ===================== */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* icon size increases / decreases the icon size. 0rem means it's native font size - 16.2px */
+  --icon-size: 0rem;
+  
+  /* icon gap pushes the rightmost element to the right this amount. icon stays stationary in the left margin  */
+  --icon-gap: 0rem;
+
+  /* --icon-vertical-offset: 2%; currently unused.*/
+
+  /* section gap controls the gap below each major section. Increase adds more space */
+  --section-gap: 3.125rem;
+
+  /* icon gutter controls the icon offset from the rightmost element */
+  --icon-gutter: 2.5rem;
+
+  /* adjusting to get the icon and the right most elements to work in sync */
+
+  /* fluid gap & height bounds for corporate logos */
+  --logo-gap: clamp(.75rem, 2vw, 1.75rem);
+  --logo-height: clamp(32px, 4vw, 64px);
+
+  /* remove the gap between divs  */
+  --slide-gap: -.25rem;
+
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 2.027rem;
+   /* h2 */
+  --fs-7: 1.802rem;
+  /* h3 */
+  --fs-6: 1.602rem;
+  /* h4 */
+  --fs-5: 1.424rem;
+  /* h5 */
+  --fs-4: 1.266rem;
+  /* h6 */
+  --fs-3: 1rem;
+  /* captioning */
+  --fs-1: .9rem;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  /* margin: 5%; */
+  /* was 10% */
+}
+
+
 
 html {
     background-color: black;
+    
 }
 .page-wrapper-adobe{
-  background-color: white;
+  
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.intro-gif{
+  margin-bottom: var(--section-gap);
 }
 
-.images-section-wrapper{
-    margin: 0;
-    background-color: white;
-    height: 200px;
-    width: 100vw
+.slide{
+  margin-top: var(--slide-gap);
 }
