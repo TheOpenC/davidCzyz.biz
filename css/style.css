@@ -212,12 +212,26 @@ p {
 li.amazon-logo {
   padding-top: .65rem;
 }
-
 li.cambells-logo{
   padding-top: .25rem;
 }
 li.champion-logo{
   padding-top: .35rem;
+}
+li.ka-logo{
+  padding-top: .075rem;
+}
+li.powerbar-logo{
+  padding-top: .2rem;
+}
+li.viasat-logo{
+  padding-top: -.075rem;
+}
+li.walmart-logo{
+  padding-top: .25rem;
+}
+li.whirlpool-logo{
+  padding-top: .4rem;
 }
 
 
