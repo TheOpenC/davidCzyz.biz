@@ -49,7 +49,7 @@ body {
   /* was 10% */
 }
 .page-wrapper{
-  max-width: 1300px;
+  max-width: 1200px;
   /* was max-width 1100px */
   margin: 0 auto;
 }
@@ -171,7 +171,7 @@ p {
   padding-right: 6rem;
 }
 .logos-container ul:first-of-type{
-  margin-top: -.75rem; 
+  margin-top: -1.1rem; 
 }
 
 
@@ -195,9 +195,10 @@ p {
 }
 
 .logo-row img{
-  height: var(--logo-height);
+
+  height: 64px;
   max-width: 100%;
-  width: auto;
+  /* width: auto; */
   display: block;
 }
 .logo-row li,
@@ -216,7 +217,7 @@ li.cambells-logo{
   padding-top: .25rem;
 }
 li.champion-logo{
-  padding-top: .35rem;
+  padding-top: .45rem;
 }
 li.ka-logo{
   padding-top: .075rem;
@@ -360,10 +361,9 @@ li.whirlpool-logo{
   padding-top: .25rem;
   }
   /* diamond */
-  .corporate-client.logo{
-    margin-top: -.25rem;
+  /* li.logo-row{
+    margin-top: -.25rem;} */
   
-  }
   /* smiley */
   .material-symbols-outlined.satisfied{
     padding-top: .25rem;
@@ -385,12 +385,18 @@ li.whirlpool-logo{
   } 
   
   .logos-container{
+    max-width: 75%;
+    margin-bottom: var(--section-gap)
+  }
+
+  .logos-container ul{
     padding-right: 0;
-    width: 85%;
+    width: 100%;
   }
-  .logo-list{
+
+  /* .logo-list{
     justify-content: flex-start;
-  }
+  } */
   /* adjust the min-height to change the limit between projects.  */
   .project-div{
     width: 100%;
