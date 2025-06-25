@@ -152,6 +152,7 @@ p {
   display: flex;
   width: 100%;
   align-items: flex-start;
+  
 }
 /* the whole block that contains the diamond + the three <ul> rows */
 .logos-container{
@@ -159,6 +160,8 @@ p {
   /* 1st col is “visual only” (0 px), 2nd col is everything else  */
   grid-template-columns: var(--icon-size) 1fr;   /* --icon-size is 0 rem */
   column-gap: var(--icon-gap);                   /* keeps left column    */
+
+  
  
 }
 
@@ -177,10 +180,15 @@ p {
 
 
 
-.logos-container, 
+.logos-container{
+  flex: 0 0 52%;
+  max-width: 52%;
+  min-width: 0;
+}
+
 .contact-container{
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 47%;
+  max-width: 47%;
   min-width: 0;
 }
 
@@ -385,13 +393,20 @@ li.whirlpool-logo{
   } 
   
   .logos-container{
-    max-width: 75%;
-    margin-bottom: var(--section-gap)
+    max-width: 95%;
+    margin-bottom: var(--section-gap);
+    margin-top: var(--section-gap);
   }
 
   .logos-container ul{
     padding-right: 0;
     width: 100%;
+  }
+  .logo-row {
+    height: 75px;
+  }
+  .logo {
+    height: 20px;
   }
 
   /* .logo-list{
