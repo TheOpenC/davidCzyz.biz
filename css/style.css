@@ -336,6 +336,13 @@ li.whirlpool-logo{
 /* ---------------------- */
 /* breakpoints */
 /* ---------------------- */
+@media(max-width: 1300px){
+  .adobe-logo{
+    padding-top: .125rem;
+  }
+}
+
+
 @media (max-width: 1050px) {
   body{
     margin: 12%;
@@ -415,11 +422,15 @@ li.whirlpool-logo{
   margin-top: 0rem; 
 }
   .logo-row {
-    height: 75px;
+    height: 65px;
   }
   .logo {
    max-height: 30px;
-   min-height: 20px;
+   min-height: 25px;
+  }
+  /* Individual logos */
+  .adobe-logo{
+    padding-top: .2rem;
   }
 
   /* .logo-list{
