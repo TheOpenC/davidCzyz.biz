@@ -1,5 +1,5 @@
 /* ===================== */
-/* Adobe Page*/
+/* Selah and the Spades Page*/
 /* ===================== */
 /* Box Model Hack */
 * {
@@ -7,7 +7,6 @@
 }
 
 :root {
-
   /* section gap controls the gap below each major section. Increase adds more space */
   --section-gap: 3.125rem;
 
@@ -32,22 +31,42 @@
   --fs-1: .9rem;
 }
 
+html{
+  /* font-size: 18px; */
+}
 body {
   font-family: Helvetica, sans-serif;
+  /* margin: 5%; */
+  /* was 10% */
 }
 
+
+
 html {
-    background-color: black; 
+    /* background-color: black; */
+    
 }
+
+
 
 img {
   width: 100%;
   height: auto;
+  
 }
-.intro-gif{
-  margin-bottom: var(--section-gap);
-}
+
 
 .slide{
   margin-top: var(--slide-gap);
+}
+
+.selah2 {
+  height: auto;
+}
+.selah2 p{
+  padding: 4rem;
+  max-width: 1000px;
+  margin: auto;
+  font-size: var(--fs-2);
+  line-height: 1.5;
 }
