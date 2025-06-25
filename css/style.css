@@ -21,8 +21,11 @@
   /* adjusting to get the icon and the right most elements to work in sync */
 
   /* fluid gap & height bounds for corporate logos */
-  --logo-gap: clamp(.75rem, 2vw, 1.75rem);
-  --logo-height: clamp(32px, 4vw, 64px);
+  /* .75rem, 2vw 1.75rem */
+  --logo-gap: clamp(1rem, 2vw, 1.75rem);
+
+  /* 32px 4vw 64px */
+  --logo-height: clamp(50px, 3vw, 64px);
 
   
   /* p */
@@ -353,6 +356,10 @@ li.whirlpool-logo{
   --fs-3: 1.35rem;
   /* captioning */
   --fs-1: 1rem;
+
+   --logo-gap: clamp(1rem, 5vw, 4rem);
+
+
   
  
   }
@@ -403,10 +410,10 @@ li.whirlpool-logo{
     width: 100%;
   }
   .logo-row {
-    height: 75px;
+    height: 85px;
   }
   .logo {
-    height: 20px;
+   min-height: 40px;
   }
 
   /* .logo-list{
