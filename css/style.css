@@ -399,6 +399,7 @@ li.whirlpool-logo{
     margin: 0;
   } 
   
+
   .logos-container{
     max-width: 95%;
     margin-bottom: var(--section-gap);
@@ -409,11 +410,16 @@ li.whirlpool-logo{
     padding-right: 0;
     width: 100%;
   }
+
+  .logos-container ul:first-of-type{
+  margin-top: 0rem; 
+}
   .logo-row {
-    height: 85px;
+    height: 75px;
   }
   .logo {
-   min-height: 40px;
+   max-height: 30px;
+   min-height: 20px;
   }
 
   /* .logo-list{
