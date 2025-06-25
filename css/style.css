@@ -207,7 +207,7 @@ p {
 
 .logo-row img{
 
-  height: 64px;
+  height: 54px;
   max-width: 100%;
   /* width: auto; */
   display: block;
@@ -365,6 +365,7 @@ li.whirlpool-logo{
   --fs-1: 1rem;
 
    --logo-gap: clamp(1rem, 5vw, 4rem);
+   --logo-height: clamp(50px, 10vw, 75px);
 
 
   
@@ -422,7 +423,7 @@ li.whirlpool-logo{
   margin-top: 0rem; 
 }
   .logo-row {
-    height: 65px;
+    height: var(--logo-height);
   }
   .logo {
    max-height: 30px;
