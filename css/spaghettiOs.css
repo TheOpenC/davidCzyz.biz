@@ -1,0 +1,104 @@
+/* ===================== */
+/* SpaghettiOs Page*/
+/* ===================== */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* section gap controls the gap below each major section. Increase adds more space */
+  --section-gap: 3.125rem;
+
+  /* heading top gap */
+  --heading-top-gap: 1rem;
+
+  /* heading bottom gap */
+  --heading-bottom-gap: 2rem;
+  /* remove the gap between divs  */
+  --slide-gap: -.25rem;
+
+  /* 1.250 - Major Third*/
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 3.815rem;
+   /* h2 */
+  --fs-7: 3.052rem;
+  /* h3 */
+  --fs-6: 2.441rem;
+  /* h4 */
+  --fs-5: 1.953rem;
+  /* h5 */
+  --fs-4: 1.563rem;
+  /* h6 */
+  --fs-3: 1.25rem;
+  /* captioning */
+  --fs-1: .8rem;
+}
+
+html{
+  /* font-size: 18px; */
+}
+body {
+  font-family: Helvetica, sans-serif;
+  /* margin: 5%; */
+  /* was 10% */
+}
+
+
+
+html {
+    /* background-color: black; */
+    
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+small {
+  font-size: var(--fs-1);
+  font-style: italic;
+  margin: auto;
+  margin-top: var(--section-gap);
+  display: block;
+}
+
+.slide{
+  margin-top: var(--slide-gap);
+}
+
+.spaghettiO_2 {
+  display: flex;
+  margin: var(--section-gap) 0;
+}
+.spaghettio-logo{
+  width: 400px;
+  margin: auto;
+}
+
+p{
+  padding: 0 4rem 2rem 4rem;
+  max-width: 1200px;
+  margin: auto;
+  font-size: var(--fs-2);
+  line-height: 2;
+}
+
+.spaghettiO_14{
+  display: flex;
+  flex-direction: column;
+}
+.spaghettiO_14 h2{
+  display: block;
+  font-size: var(--fs-7);
+  font-weight: 800;
+  margin: auto;
+  margin-top: var(--heading-top-gap);
+  margin-bottom: var(--heading-bottom-gap);
+}
+.o{
+  color: #fbac25;
+}
