@@ -18,6 +18,9 @@
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
 
+  /* matrix items gap */
+  --row-gap: .25rem;
+
   /* 1.250 - Major Third*/
   /* p */
   --fs-2: 1rem;
@@ -67,7 +70,7 @@ small {
 }
 
 .slide{
-  margin-top: var(--slide-gap);
+  /* margin-top: var(--slide-gap); */
 }
 h2{
   display: block;
@@ -100,10 +103,34 @@ p{
 
 .big-matrix,
 .af-matrix{
-  display: flex;
   flex-direction: row;
-  margin-bottom: var(--section-gap)
+  margin-bottom: var(--section-gap);
+  justify-content: space-between;
 }
+.big-matrix .slide{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: var(--row-gap);
+  margin-bottom: var(--section-gap);
+}
+.row{
+  display: flex;
+  width: 100%;
+  
+  gap: var(--row-gap)
+}
+.r1_2{
+  
+}
+.r1_1,
+.r1_3{
+  flex-shrink: 2;
+}
+.r3_2{
+  flex-shrink: 1.575;
+}
+
 
 
 .spaghettiO_14,
