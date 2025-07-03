@@ -22,7 +22,7 @@
   --row-gap: .25rem;
 
   /* base row-height for big-matrix */
-  --row-height: 300px;
+  /* --row-height: 300px; */
 
  
   
@@ -105,30 +105,38 @@ p{
   margin: auto;
 }
 
+.big-matrix-wrapper {
+  width: 100%;
+  max-width: 1205px;
+
+}
 .big-matrix,
 .af-matrix{
+  
   flex-direction: row;
   margin-bottom: var(--section-gap);
-  justify-content: space-between;
+  
 }
 .big-matrix .row{
+  flex: 1;
   display: flex;
   gap: var(--row-gap);
   margin-bottom: var(--row-gap);
-  align-items: flex-start;
+  width: 100%;
+  /* align-items: flex-start; */
 }
-.big-matrix .row .slide{
-  flex: 1;
-  
-  
-  
-}
-.big-matrix .slide img{
+
+.big-matrix .row .slide img{
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+}
+
+.r1,
+.r2,
+.r3,
+.r4 {
+
 }
 
  
@@ -139,3 +147,5 @@ p{
   display: flex;
   flex-direction: column;
 }
+
+
