@@ -132,13 +132,7 @@ p{
   height: 100%;
 }
 
-.r1,
-.r2,
-.r3,
-.r4 {
-
-}
-
+/* continue resizing images to 720 px height for the entire matrix so that they have more width to take up and can act responsively.  */
  
 
 .spaghettiO_14,
