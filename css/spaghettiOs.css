@@ -107,7 +107,7 @@ p{
 
 .big-matrix-wrapper {
   width: 100%;
-  max-width: 1205px;
+  margin: 0;
 
 }
 .big-matrix,
