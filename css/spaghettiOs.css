@@ -105,28 +105,45 @@ p{
   margin: auto;
 }
 
-.big-matrix-wrapper {
+.big-matrix-wrapper,
+.af-matrix-wrapper,
+.quad-wrapper {
   width: 100%;
-  margin: 0;
+  margin: 0
 
 }
 .big-matrix,
 .af-matrix{
-  
   flex-direction: row;
   margin-bottom: var(--section-gap);
-  
 }
-.big-matrix .row{
+.quad-matrix{
+  flex-direction: row;
+}
+
+.big-matrix .row,
+.af-matrix .row{
   flex: 1;
   display: flex;
   gap: var(--row-gap);
   margin-bottom: var(--row-gap);
   width: 100%;
-  /* align-items: flex-start; */
+}
+.quad-matrix .row{
+  flex: 1;
+  display: flex;
+  gap: var(--row-gap);
+ 
+  width: 100%;
+}
+.quad-matrix{
+  margin-bottom: 0;
 }
 
-.big-matrix .row .slide img{
+
+
+.big-matrix .row .slide img,
+.af-matrix .row .slide img{
   display: block;
   width: 100%;
   height: 100%;
