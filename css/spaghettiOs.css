@@ -117,12 +117,11 @@ p{
   flex-direction: row;
   margin-bottom: var(--section-gap);
 }
-.quad-matrix{
-  flex-direction: row;
-}
+
 
 .big-matrix .row,
-.af-matrix .row{
+.af-matrix .row,
+.quad-matrix .row{
   flex: 1;
   display: flex;
   gap: var(--row-gap);
@@ -130,14 +129,12 @@ p{
   width: 100%;
 }
 .quad-matrix .row{
-  flex: 1;
-  display: flex;
-  gap: var(--row-gap);
+ margin-bottom: 0;
  
-  width: 100%;
 }
 .quad-matrix{
   margin-bottom: 0;
+ 
 }
 
 
@@ -158,5 +155,7 @@ p{
   display: flex;
   flex-direction: column;
 }
-
+.spaghettiO_17{
+  width: 100vw;
+}
 
