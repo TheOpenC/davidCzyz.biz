@@ -40,41 +40,39 @@ body {
   font-family: Helvetica, sans-serif;
   
 }
-img {
-  
-  
-  
+
+.beans-header{
+
 }
 
-.graphics-wrapper{
-  max-width: 1000px;
+.beans-header img{
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0
+}
+
+.container img{
+  width: 100%;
+  height: auto;
+  display: block;
   margin: 0 auto;
 }
-.slide-container{
-  margin: 0 5rem;
-}
-.slide{
-  width: 100%;
-  display: flex;
 
-}
-.graphic{
-  max-width: 100%;
-  height: auto;
-}
 .beans-header,
 .beans-intro,
-.beans-logo {
+.beans-logo,
+.graphics-wrapper {
   margin-bottom: var(--section-gap)
 }
 
 .beans-logo {
   margin-bottom: var(--section-gap ) 
 }
-.beans-header img{
-  width: 100%;
-  height: auto;
-}
+
 
 
 .beans-logo img{
@@ -83,7 +81,9 @@ img {
   
 }
 
+
 .beans-intro p{
   line-height: 2;
+  text-wrap: wrap;
 }
 
