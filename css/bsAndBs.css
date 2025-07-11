@@ -1,5 +1,5 @@
 /* ===================== */
-/* Selah and the Spades Page*/
+/*Beans and Brews*/
 /* ===================== */
 /* Box Model Hack */
 * {
@@ -8,7 +8,7 @@
 
 :root {
   /* section gap controls the gap below each major section. Increase adds more space */
-  --section-gap: 3.125rem;
+  --section-gap: 5rem;
 
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
@@ -33,40 +33,57 @@
 
 html{
   /* font-size: 18px; */
+  
+  
 }
 body {
   font-family: Helvetica, sans-serif;
-  /* margin: 5%; */
-  /* was 10% */
+  
 }
-
-
-
-html {
-    /* background-color: black; */
-    
-}
-
-
-
 img {
-  width: 100%;
-  height: auto;
+  
+  
   
 }
 
-
-.slide{
-  margin-top: var(--slide-gap);
+.graphics-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
 }
+.slide-container{
+  margin: 0 5rem;
+}
+.slide{
+  width: 100%;
+  display: flex;
 
-.selah2 {
+}
+.graphic{
+  max-width: 100%;
   height: auto;
 }
-.selah2 p{
-  padding: 4rem;
-  max-width: 1000px;
-  margin: auto;
-  font-size: var(--fs-2);
-  line-height: 1.5;
+.beans-header,
+.beans-intro,
+.beans-logo {
+  margin-bottom: var(--section-gap)
 }
+
+.beans-logo {
+  margin-bottom: var(--section-gap ) 
+}
+.beans-header img{
+  width: 100%;
+  height: auto;
+}
+
+
+.beans-logo img{
+  margin: 0 auto;
+  display: block;
+  
+}
+
+.beans-intro p{
+  line-height: 2;
+}
+
