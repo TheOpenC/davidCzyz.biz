@@ -10,8 +10,19 @@
   /* section gap controls the gap below each major section. Increase adds more space */
   --section-gap: 5rem;
 
+  /* spacing between graphic elements  */
+  --graphic-gap: 1.75rem;
+
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
+
+
+
+
+  --max-width: 1000px;
+  --gutter-min: 2rem;
+  --gutter-max: 5rem;
+ 
 
   /* p */
   --fs-2: 1rem;
@@ -41,33 +52,47 @@ body {
   
 }
 
-.beans-header{
-
+.site-header{
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
+
 .beans-header img{
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1000px;
+  max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
-  padding: 0
+  padding: 0 clamp(
+    var(--gutter-min),
+    5vw,
+    var(--gutter-max)
+  );
 }
 
 .container img{
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+
+}
+
+.graphic{
+margin-bottom: var(--graphic-gap)
 }
 
 .beans-header,
 .beans-intro,
-.beans-logo,
-.graphics-wrapper {
+.beans-logo {
   margin-bottom: var(--section-gap)
 }
+
 
 .beans-logo {
   margin-bottom: var(--section-gap ) 
@@ -77,7 +102,7 @@ body {
 
 .beans-logo img{
   margin: 0 auto;
-  display: block;
+  padding: 0 35%;
   
 }
 
