@@ -102,7 +102,9 @@ margin-bottom: var(--graphic-gap)
 
 .beans-logo img{
   margin: 0 auto;
-  padding: 0 35%;
+  padding: 0 30%;
+  min-width: 400px;
+
   
 }
 
