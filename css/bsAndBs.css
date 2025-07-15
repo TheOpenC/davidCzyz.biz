@@ -102,7 +102,7 @@ margin-bottom: var(--graphic-gap)
 
 .beans-logo img{
   margin: 0 auto;
-  padding: 0 30%;
+  padding: 0 clamp(20%, 35%, 40%);
   min-width: 400px;
 
   
@@ -112,5 +112,29 @@ margin-bottom: var(--graphic-gap)
 .beans-intro p{
   line-height: 2;
   text-wrap: wrap;
+}
+
+.quad-matrix{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--graphic-gap)
+}
+.r1,
+.r2 {
+  width: 100%;
+  display: flex;
+}
+.quad{
+  width: 50%;
+}
+
+.r1-1,
+.r2-1{
+  padding-right: .875rem;
+}
+
+.r1-2,
+.r2-2 {
+  padding-left: .875rem;
 }
 
