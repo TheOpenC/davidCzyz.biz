@@ -80,7 +80,7 @@ body {
 .ai1 img {
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
-  filter: drop-shadow(-2.5px -2.5px 1.5rem #000 );
+  filter: drop-shadow(-1px -1px 3.5rem #FFF );
   position: relative;
   z-index: 10;
 }
