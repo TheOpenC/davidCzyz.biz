@@ -1,5 +1,5 @@
 /* ===================== */
-/*Beans and Brews*/
+/*The Perfect AI Assistant*/
 /* ===================== */
 /* Box Model Hack */
 * {
@@ -75,6 +75,19 @@ body {
   height: auto;
   display: block;
 
+}
+
+.ai1 img {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  filter: drop-shadow(-2.5px -2.5px 1.5rem #000 );
+  position: relative;
+  z-index: 10;
+}
+
+.ai2 img{
+  position:relative;
+  z-index: 20;
 }
 
 .bottom-graphics {
