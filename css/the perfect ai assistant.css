@@ -11,7 +11,7 @@
   --section-gap: 5rem;
 
   /* spacing between graphic elements  */
-  --graphic-gap: 1.75rem;
+  --graphic-gap: -.5rem;
 
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
@@ -58,12 +58,6 @@ body {
 }
 
 
-/* .beans-header img{
-  display: block;
-  width: 100%;
-  height: auto;
-} */
-
 .container {
   max-width: var(--max-width);
   width: 100%;
@@ -83,5 +77,34 @@ body {
 
 }
 
+.bottom-graphics {
+  display: flex;
+  flex-direction: column;
+  gap: var(--graphic-gap)
+}
+.graphic{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.graphic img{
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.graphic.left{
+  justify-content: flex-start;
+}
+
+.graphic.right{
+  justify-content: flex-end;
+}
+.graphic.center.bird{
+  justify-content: center;
+  max-width: 900px;
+  height: auto;
+}
 
 @media (max-width: )
