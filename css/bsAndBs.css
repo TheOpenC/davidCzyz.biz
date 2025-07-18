@@ -44,8 +44,6 @@
 
 html{
   /* font-size: 18px; */
-  
-  
 }
 body {
   font-family: Helvetica, sans-serif;
@@ -102,11 +100,9 @@ margin-bottom: var(--graphic-gap)
 
 .beans-logo img{
   margin: 0 auto;
-  
+
+
   max-width: 225px;
-
-
-  
 }
 
 

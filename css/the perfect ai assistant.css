@@ -1,5 +1,5 @@
 /* ===================== */
-/* Adobe Page*/
+/*Beans and Brews*/
 /* ===================== */
 /* Box Model Hack */
 * {
@@ -7,12 +7,22 @@
 }
 
 :root {
-
   /* section gap controls the gap below each major section. Increase adds more space */
-  --section-gap: 3.125rem;
+  --section-gap: 5rem;
+
+  /* spacing between graphic elements  */
+  --graphic-gap: 1.75rem;
 
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
+
+
+
+
+  --max-width: 1000px;
+  --gutter-min: 2rem;
+  --gutter-max: 5rem;
+ 
 
   /* p */
   --fs-2: 1rem;
@@ -30,27 +40,48 @@
   --fs-3: 1rem;
   /* captioning */
   --fs-1: .9rem;
-
-  /* The blue for the entire page is RGB (0 15 254) */
 }
 
+html{
+  /* font-size: 18px; */
+  background-color: #0000FE;
+}
 body {
   font-family: Helvetica, sans-serif;
-  background-color: #0000fe;
+  
 }
 
-html {
-    background-color: black; 
+.site-header{
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
-img {
+
+/* .beans-header img{
+  display: block;
   width: 100%;
   height: auto;
-}
-.intro-gif{
-  margin-bottom: var(--section-gap);
+} */
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(
+    var(--gutter-min),
+    5vw,
+    var(--gutter-max)
+  );
+  
 }
 
-.slide{
-  margin-top: var(--slide-gap);
+.container img{
+  width: 100%;
+  height: auto;
+  display: block;
+
 }
+
+
+@media (max-width: )
