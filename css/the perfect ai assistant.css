@@ -1,0 +1,56 @@
+/* ===================== */
+/* Adobe Page*/
+/* ===================== */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* section gap controls the gap below each major section. Increase adds more space */
+  --section-gap: 3.125rem;
+
+  /* remove the gap between divs  */
+  --slide-gap: -.25rem;
+
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 2.027rem;
+   /* h2 */
+  --fs-7: 1.802rem;
+  /* h3 */
+  --fs-6: 1.602rem;
+  /* h4 */
+  --fs-5: 1.424rem;
+  /* h5 */
+  --fs-4: 1.266rem;
+  /* h6 */
+  --fs-3: 1rem;
+  /* captioning */
+  --fs-1: .9rem;
+
+  /* The blue for the entire page is RGB (0 15 254) */
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #0000fe;
+}
+
+html {
+    background-color: black; 
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+.intro-gif{
+  margin-bottom: var(--section-gap);
+}
+
+.slide{
+  margin-top: var(--slide-gap);
+}
