@@ -1,0 +1,161 @@
+/* ===================== */
+/* SpaghettiOs Page*/
+/* ===================== */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* section gap controls the gap below each major section. Increase adds more space */
+  --section-gap: 2.5rem;
+
+  /* heading top gap */
+  --heading-top-gap: 1rem;
+
+  /* heading bottom gap */
+  --heading-bottom-gap: 1.5rem;
+  /* remove the gap between divs  */
+  --slide-gap: -.25rem;
+
+  /* matrix items gap */
+  --row-gap: .25rem;
+
+  /* base row-height for big-matrix */
+  /* --row-height: 300px; */
+
+ 
+  
+
+  /* 1.250 - Major Third*/
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 3.815rem;
+   /* h2 */
+  --fs-7: 3.052rem;
+  /* h3 */
+  --fs-6: 2.441rem;
+  /* h4 */
+  --fs-5: 1.953rem;
+  /* h5 */
+  --fs-4: 1.563rem;
+  /* h6 */
+  --fs-3: 1.25rem;
+  /* captioning */
+  --fs-1: .8rem;
+}
+
+html{
+  /* font-size: 18px; */
+}
+body {
+  font-family: Helvetica, sans-serif;
+  /* margin: 5%; */
+  /* was 10% */
+}
+
+
+
+html {
+    /* background-color: black; */
+    
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+small {
+  font-size: var(--fs-1);
+  font-style: italic;
+  margin: auto;
+  margin-top: var(--section-gap);
+  display: block;
+}
+
+
+h2{
+  display: block;
+  font-size: var(--fs-7);
+  font-weight: 800;
+  margin: auto;
+  margin-top: var(--heading-top-gap);
+  margin-bottom: var(--heading-bottom-gap);
+}
+.o{
+  color: #fbac25;
+}
+
+p{
+  padding: 0 4rem 2rem 4rem;
+  max-width: 1200px;
+  margin: auto;
+  font-size: var(--fs-2);
+  line-height: 2;
+}
+
+.spaghettiO_2 {
+  display: flex;
+  margin: var(--section-gap) 0;
+}
+.spaghettio-logo{
+  width: 400px;
+  margin: auto;
+}
+
+.big-matrix-wrapper,
+.af-matrix-wrapper,
+.quad-wrapper {
+  width: 100%;
+  margin: 0
+
+}
+.big-matrix,
+.af-matrix{
+  flex-direction: row;
+  margin-bottom: var(--section-gap);
+}
+
+
+.big-matrix .row,
+.af-matrix .row,
+.quad-matrix .row{
+  flex: 1;
+  display: flex;
+  gap: var(--row-gap);
+  margin-bottom: var(--row-gap);
+  width: 100%;
+}
+.quad-matrix .row{
+ margin-bottom: 0;
+ 
+}
+.quad-matrix{
+  margin-bottom: 0;
+ 
+}
+
+
+
+.big-matrix .row .slide img,
+.af-matrix .row .slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* continue resizing images to 720 px height for the entire matrix so that they have more width to take up and can act responsively.  continue */
+ 
+
+.spaghettiO_14,
+.spaghettiO_16,
+.spaghettiO_20{
+  display: flex;
+  flex-direction: column;
+}
+.spaghettiO_17{
+  width: 100vw;
+}
+
