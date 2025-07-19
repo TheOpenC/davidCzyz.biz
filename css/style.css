@@ -113,7 +113,12 @@ p {
 
 /* David logo header */
 .header-graphic{
+  display: flex;
+  width: 300px;
   margin-bottom:var(--section-gap);
+}
+.header-graphic img{
+  width: 100%;
 }
 /* Intro Paragraph with icon */
 .intro-p-icon-container {
