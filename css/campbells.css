@@ -1,5 +1,5 @@
 /* ===================== */
-/* SpaghettiOs Page*/
+/* Campbells*/
 /* ===================== */
 /* Box Model Hack */
 * {
@@ -8,7 +8,7 @@
 
 :root {
   /* section gap controls the gap below each major section. Increase adds more space */
-  --section-gap: 2.5rem;
+  --section-gap: 5rem;
 
   /* heading top gap */
   --heading-top-gap: 1rem;
@@ -84,78 +84,32 @@ h2{
   margin-top: var(--heading-top-gap);
   margin-bottom: var(--heading-bottom-gap);
 }
-.o{
-  color: #fbac25;
-}
+
 
 p{
   padding: 0 4rem 2rem 4rem;
-  max-width: 1200px;
+  max-width: 950px;
   margin: auto;
   font-size: var(--fs-2);
   line-height: 2;
+  margin-bottom: 2rem;
 }
 
-.spaghettiO_2 {
-  display: flex;
-  margin: var(--section-gap) 0;
-}
-.spaghettio-logo{
-  width: 400px;
-  margin: auto;
-}
-
-.big-matrix-wrapper,
-.af-matrix-wrapper,
-.quad-wrapper {
+.header-graphic {
   width: 100%;
-  margin: 0
-
-}
-.big-matrix,
-.af-matrix{
-  flex-direction: row;
   margin-bottom: var(--section-gap);
+  
 }
 
-
-.big-matrix .row,
-.af-matrix .row,
-.quad-matrix .row{
-  flex: 1;
+.main-animation{
   display: flex;
-  gap: var(--row-gap);
-  margin-bottom: var(--row-gap);
-  width: 100%;
-}
-.quad-matrix .row{
- margin-bottom: 0;
- 
-}
-.quad-matrix{
-  margin-bottom: 0;
- 
-}
+  
 
-
-
-.big-matrix .row .slide img,
-.af-matrix .row .slide img{
-  display: block;
-  width: 100%;
-  height: 100%;
 }
-
-/* continue resizing images to 720 px height for the entire matrix so that they have more width to take up and can act responsively.  continue */
- 
-
-.spaghettiO_14,
-.spaghettiO_16,
-.spaghettiO_20{
-  display: flex;
-  flex-direction: column;
-}
-.spaghettiO_17{
-  width: 100vw;
+.main-animation img{
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
