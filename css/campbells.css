@@ -10,40 +10,36 @@
   /* section gap controls the gap below each major section. Increase adds more space */
   --section-gap: 5rem;
 
-  /* heading top gap */
-  --heading-top-gap: 1rem;
+  /* spacing between graphic elements  */
+  --graphic-gap: -.5rem;
 
-  /* heading bottom gap */
-  --heading-bottom-gap: 1.5rem;
   /* remove the gap between divs  */
   --slide-gap: -.25rem;
 
-  /* matrix items gap */
-  --row-gap: .25rem;
 
-  /* base row-height for big-matrix */
-  /* --row-height: 300px; */
 
+
+  --max-width: 1200px;
+  --gutter-min: 2rem;
+  --gutter-max: 5rem;
  
-  
 
-  /* 1.250 - Major Third*/
   /* p */
   --fs-2: 1rem;
   /* h1 */
-  --fs-8: 3.815rem;
+  --fs-8: 2.027rem;
    /* h2 */
-  --fs-7: 3.052rem;
+  --fs-7: 1.802rem;
   /* h3 */
-  --fs-6: 2.441rem;
+  --fs-6: 1.602rem;
   /* h4 */
-  --fs-5: 1.953rem;
+  --fs-5: 1.424rem;
   /* h5 */
-  --fs-4: 1.563rem;
+  --fs-4: 1.266rem;
   /* h6 */
-  --fs-3: 1.25rem;
+  --fs-3: 1rem;
   /* captioning */
-  --fs-1: .8rem;
+  --fs-1: .9rem;
 }
 
 html{
@@ -100,6 +96,16 @@ p{
   margin-bottom: var(--section-gap);
   
 }
+.graphics-container{
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(
+    var(--gutter-min),
+    5vw,
+    var(--gutter-max)
+  );
+}
 
 .main-animation{
   display: flex;
@@ -107,9 +113,25 @@ p{
 
 }
 .main-animation img{
-  max-width: 1000px;
-  margin: 0 auto;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
+.side-by-side{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.graphic {
+  width: 50%;
+}
+.right{
+  padding: 2.5rem 5rem 1rem 1.25rem;
+}
+.left{
+  padding: 2.5rem 1.25rem 1rem 5rem;
+}
+
+.bottom{
+  padding: 0 5rem 5rem 5rem
+}
