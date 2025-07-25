@@ -180,9 +180,6 @@ p {
   margin-top: -.75rem; 
 }
 
-
-
-
 .logos-container{
   flex: 0 0 52%;
   max-width: 52%;
@@ -285,9 +282,6 @@ li.whirlpool-logo{
   margin-bottom: var(--section-gap);
 }
 
-
-
-
 /* Project grid */
 .project-section-container{
   width: 100%;
@@ -332,13 +326,24 @@ li.whirlpool-logo{
   font-weight: 600;
   font-size: var(--fs-2);
 }
-.material-symbols-outlined.project-icon.arrow{
+
+.project-name-and-arrow{
+  justify-content: space-around;
+  display: flex;
+
+}
+.project-text span.project-arrow {
+  margin: 0;
+  padding: 0px;top: -4px;left: 7px;
+  
+}
+/* .material-symbols-outlined.project-icon.arrow{
   margin: 0rem;
   color: black;
   font-size: 1rem;
   margin-top: -.3rem;
   padding-left: .25rem;
-}
+} */
 
 /* Beans and Brews thumbnail */
 .beansAndBrew{
@@ -383,6 +388,10 @@ li.whirlpool-logo{
 
   
  
+  }
+
+  .header-graphic{
+    width: 225px;
   }
   /* icon adjustments */
   /* ------------------- */
@@ -466,6 +475,11 @@ li.whirlpool-logo{
   .project-text{
     padding: 3% 0 5% 0;
   }
+  .project-text span.project-arrow {
+  margin: 0;
+  padding: 0px;top: -1px;left: 7px;
+  
+}
 
 }
 
