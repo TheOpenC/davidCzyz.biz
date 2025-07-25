@@ -135,3 +135,14 @@ p{
 .bottom{
   padding: 0 5rem 5rem 5rem
 }
+
+@media (max-width: 1200px){
+  .main-animation img{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  .graphics-container{
+    padding: 0;
+  }
+}
