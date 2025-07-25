@@ -1,0 +1,116 @@
+/* ===================== */
+/*The Perfect AI Assistant*/
+/* ===================== */
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* section gap controls the gap below each major section. Increase adds more space */
+  --section-gap: 5rem;
+
+  /* spacing between graphic elements  */
+  --graphic-gap: -.5rem;
+
+  /* remove the gap between divs  */
+  --slide-gap: -.25rem;
+
+  --element-spacing: 2rem;
+
+  --max-width: 1200px;
+  --gutter-min: 2rem;
+  --gutter-max: 5rem;
+ 
+
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 2.027rem;
+   /* h2 */
+  --fs-7: 1.802rem;
+  /* h3 */
+  --fs-6: 1.602rem;
+  /* h4 */
+  --fs-5: 1.424rem;
+  /* h5 */
+  --fs-4: 1.266rem;
+  /* h6 */
+  --fs-3: 1rem;
+  /* captioning */
+  --fs-1: .9rem;
+}
+
+html{
+  /* font-size: 18px; */
+  background-color: rgb(239 177 16);
+}
+body {
+  font-family: Helvetica, sans-serif;
+  
+}
+
+.site-header{
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(
+    var(--gutter-min),
+    5vw,
+    var(--gutter-max)
+  );
+  
+}
+
+.container img{
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+.intro-text{
+    padding: 0 5.5rem 2rem 5.5rem;
+  }
+
+.wp-logo,
+.wp-heading,
+.wp-text{
+  padding-bottom: var(--element-spacing);
+  line-height: 2;
+}
+
+.wp-heading {
+  font-size: var(--fs-5);
+  text-align: center;
+
+}
+
+
+@media (max-width: 1200px){
+  .container{
+    padding: 0;
+  }
+  
+
+}
+
+@media(max-width: 900px){
+  .intro-text{
+    padding: 0 3.5rem 2rem 3.5rem;
+  }
+}
+
+@media (max-width: 750px){
+  
+  .intro-text{
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+}
