@@ -77,20 +77,6 @@ body {
 
 }
 
-.ai1 img {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  filter: drop-shadow(-1px -1px 3.5rem #FFF );
-  position: relative;
-  z-index: 10;
-}
-
-.ai2 img{
-  position:relative;
-  z-index: 20;
-}
-
-
 .bottom-graphics {
   display: flex;
   flex-direction: column;
@@ -109,11 +95,11 @@ body {
 }
 
 .graphic.left{
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .graphic.right{
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 
