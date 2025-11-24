@@ -121,11 +121,23 @@ margin: 0 var(--text-lr-padding);
     --text-lr-padding: 1.5rem;
     --fs-7: 2.6rem;
   }
+  .text .af-heading{
+    line-height: .7;
+  }
+  .af-heading .tm{
+    top: 8px;
+  }
 }
 
 @media (max-width: 500px){
   :root {
     --fs-7: 2rem;
+  }
+  .text .af-heading{
+    line-height: .55;
+  }
+  .af-heading .tm{
+    top: 12px;
   }
 
 }
