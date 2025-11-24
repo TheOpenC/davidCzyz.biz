@@ -123,6 +123,13 @@ margin: 0 var(--text-lr-padding);
   }
 }
 
+@media (max-width: 500px){
+  :root {
+    --fs-7: 2rem;
+  }
+
+}
+
 p{
   font-weight: 300;
   padding-bottom: var(--p-bottom-padding);
@@ -178,6 +185,8 @@ h6{
 .yellow:nth-of-type(2){
   letter-spacing: 0;
 }
+
+
 .bold{
   font-weight: 900;
   
