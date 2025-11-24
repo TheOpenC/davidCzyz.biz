@@ -143,7 +143,7 @@ p{
   margin-bottom: rem;
 }
 .intro-three-phones{
-  filter: drop-shadow(-2.5mm 3mm .5rem black);
+  filter: drop-shadow(-1.5mm 1.75mm .3rem black);
 }
 .intro-text{
     padding: 0 5.5rem 2rem 5.5rem;
@@ -201,7 +201,9 @@ div.wp4{
 }
 
 @media (max-width: 750px){
-  
+  .intro-three-phones{
+    filter:drop-shadow(-1.5mm 1.5mm .3rem black)
+  }
   .intro-text{
     padding: 0 1.5rem 2rem 1.5rem;
   }
