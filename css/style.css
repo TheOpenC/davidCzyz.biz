@@ -146,7 +146,8 @@ p {
 /* David logo header */
 .header-graphic{
   display: flex;
-  width: 300px;
+  width: 275px;
+  margin-left: -20px;
   margin-bottom:var(--section-gap);
 }
 .header-graphic img{
