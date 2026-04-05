@@ -1,0 +1,258 @@
+/* ===================== */
+/* Grabber */
+/* ===================== */
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --section-gap: 5rem;
+  --graphic-gap: 0rem;
+  --slide-gap: 0;
+  --element-spacing: 3rem;
+
+  --max-width: 1400px;
+  --gutter-min: 2rem;
+  --gutter-max: 5rem;
+
+  /* p */
+  --fs-2: 1rem;
+  /* h1 */
+  --fs-8: 2.027rem;
+  /* h2 */
+  --fs-7: 1.802rem;
+  /* h3 */
+  --fs-6: 1.602rem;
+  /* h4 */
+  --fs-5: 1.424rem;
+  /* h5 */
+  --fs-4: 1.266rem;
+  /* h6 */
+  --fs-3: 1.125rem;
+  /* captioning */
+  --fs-1: .9rem;
+}
+
+/* ===================== */
+/* Nav */
+/* ===================== */
+.nav-button {
+  position: fixed;
+  top: 2rem;
+  left: 38px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: rgba(255 255 255 / .6);
+}
+.nav-button:hover {
+  background-color: rgba(255 255 255 / .90);
+}
+
+.material-symbols-outlined {
+  padding: 12px;
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-block;
+  font-size: 32px;
+  color: rgba(204 31 31 / .80);
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 40;
+}
+.material-symbols-outlined:hover {
+  color: rgba(204 31 31 / 1);
+}
+
+/* ===================== */
+/* Base */
+/* ===================== */
+html {
+  background-color: #fff;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+p {
+  font-weight: 200;
+  font-size: var(--fs-3);
+}
+
+
+.images-section-wrapper video,
+.images-section-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  vertical-align: top;
+}
+.images-section-wrapper > div {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===================== */
+/* Container */
+/* ===================== */
+.container {
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(
+    var(--gutter-min),
+    5vw,
+    var(--gutter-max)
+  );
+}
+
+/* ===================== */
+/* gb1 — Full-bleed hero video */
+/* ===================== */
+.gb1 {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gb1 video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================== */
+/* gb2 — Logo + intro text slide */
+/* ===================== */
+.gb2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 5.5rem;
+}
+.gb-logo {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  padding-top: 6rem;
+  padding-bottom: var(--element-spacing);
+}
+.intro-text {
+  text-align: left;
+  max-width: 880px;
+}
+.gb-heading {
+  font-size: var(--fs-3);
+  font-weight: 300;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+  padding-bottom: 1rem;
+}
+.gb-text {
+  line-height: 1.55;
+  padding-top: .5rem;
+}
+
+/* ===================== */
+/* gb3, gb4, gb7 — Single full-width images */
+/* ===================== */
+.gb3,
+.gb4,
+.gb7 {
+  /* inherits block width from container */
+}
+
+/* ===================== */
+/* gb5 — 2×2 template grid */
+/* ===================== */
+.gb5 {
+
+}
+.gb5 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===================== */
+/* gb6 — Dark catalog section, 3 images stacked */
+/* ===================== */
+.gb6 {
+  
+  /* padding: 4rem clamp(2rem, 6vw, 6rem); */
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  
+}
+.gb6 img {
+  width: 100%;
+  /* max-width: 900px; */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.gb7 img {
+  max-width: 450px;
+  min-width: 300px;
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+/* ===================== */
+/* Responsive */
+/* ===================== */
+@media (max-width: 1400px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1100px){
+  .intro-text{
+    padding: 0 3.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-button {
+    left: 20px;
+  }
+  .intro-text{
+    padding: 0 2.25rem;
+    padding-bottom: 2rem;
+  }
+  .gb2 {
+    padding: 3rem 3.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .gb2 {
+    padding: 2.5rem 1.5rem;
+  }
+  .gb6 {
+    padding: 2.5rem 1rem;
+    gap: 2rem;
+  }
+}
+
+
