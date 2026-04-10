@@ -13,6 +13,9 @@
 
   /* --icon-vertical-offset: 2%; currently unused.*/
 
+  /* main gap */
+  --main-gap: 8rem;
+
   /* section gap controls the gap below each major section. Increase adds more space */
   --section-gap: 3.125rem;
 
@@ -59,7 +62,7 @@ body {
 }
 
 main {
-  margin-bottom: 12%;
+  margin-bottom: var(--main-gap);
 }
 
 section {
@@ -123,22 +126,36 @@ p {
   position: relative;
   margin-left: calc(-1 * var(--icon-gutter));
   /* color: rgb(240, 183, 181); */
-  color: rgb(245 183 205);
+  color: rgb(251 180 180);
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+/* smiley */
+.sentiment-satisfied{
+  /* resolves the icon sitting too high */
+  top: .2rem;  
+}
+/* handshake */
+.handshake{
+  top: .2rem;
 }
 /* mail icon */
-.mail{ 
+.email-icon{ 
   margin-left: 0;
   margin-left: calc(-1 * var(--icon-gutter)); 
 }
-/* smiley */
-.sentiment_satisfied{
-  /* resolves the icon sitting too high */
-  padding-top: .3rem;  
+
+.linkedin-icon {
+  width: 24px;
+  padding-left: 3px;
+  top: -.05rem;
 }
+
 /* .project-text span.project-arrow */
-.arrow-right { 
+.arrow-icon { 
   margin: 0;
-  padding: 0px;top: -4px;left: 7px;
+  left: 7px;
 }
 
 
@@ -171,7 +188,7 @@ p {
 .p-link {
   font-weight: 600;
   /* color: rgb(240, 183, 181); */
-  color: rgb(245 183 205);
+  color: rgb(251 180 180);
 }
 
 
@@ -300,11 +317,6 @@ li.whirlpool-logo{
 .contact-list a{
   color: black;
 }
-.linkedin-icon {
-  width: 22px;
-  padding-left: 3px;
-  padding-top: .1rem;
-}
 
 
 
@@ -364,9 +376,14 @@ li.whirlpool-logo{
 .project-div .spaghettios-video{
   margin-top: -.5rem;
 }
+.project-brand,
+.project-name {
+  margin: 0;
+}
 .project-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 3% 0 2% 0;
   font-weight: 600;
   font-size: var(--fs-2);
@@ -375,10 +392,9 @@ li.whirlpool-logo{
 .project-name-and-arrow{
   justify-content: space-around;
   display: flex;
+  align-items: center;
 }
-#rain-arrow{
-  padding: 0px; top: -5px; bottom: 5px; 
-}
+
 
 
 .info{
@@ -427,7 +443,9 @@ li.whirlpool-logo{
    --logo-height: clamp(50px, 10vw, 75px);
 
    /* spacing between projects on mobile */
-   --project-gap: 2rem;
+   --project-gap: 1.5rem;
+   --section-gap: 2rem;
+   --main-gap: 5rem;
   }
 
   .header-graphic{
@@ -435,27 +453,38 @@ li.whirlpool-logo{
   }
   /* icon adjustments */
   /* ------------------- */
- .sentiment_satisfied{
+ .sentiment-satisfied{
   /* resolves the icon sitting too high */
-    padding-top: .6rem;
+    top: .6rem;
   }
-  /* star */
-  /* .material-symbols-outlined.section-logo.star */
-  .mail,
-  .linkedin{
+  .handshake{
+    top: 0;
+  }
+
+  .email-icon,
+  .linkedin-icon{
   margin-left: calc(-1 * var(--icon-gutter));
   position: relative;
-  padding-top: .25rem;
+  
+  }
+  .email-icon{
+    top: .25rem;
   }
   .linkedin-icon{
-    padding-top: .6rem;
+    top: .125rem;
   }
- 
-  
-  .image-icon{
-    padding-top: .25rem;
+
+  .project-icon{
+    top: .25rem;
   }
    
+/* Sections  */
+  main{
+    margin-bottom: var(--main-gap);
+  }
+  .intro-container{
+    margin-bottom: var(--section-gap);
+  }
   .clients-wrapper,
   .projects-wrapper{
     flex-direction: column;
@@ -539,13 +568,11 @@ li.whirlpool-logo{
   }
 
   /* .project-text span.project-arrow  */
-  .arrow-right{
+  .arrow-icon{
   margin: 0;
-  padding: 0px;top: -2px;left: 7px;
+  left: 7px;
 }
-#rain-arrow{
-  padding: 0px; top: -2px; bottom: 5px; 
-}
+
 
 .beansAndBrew{
   outline: none;
@@ -598,6 +625,17 @@ li.whirlpool-logo{
   .material-symbols-outlined,
   .icon{
     visibility: collapse;
+  }
+  .email-icon,
+  .linkedin-icon{
+    visibility: visible;
+    
+  }
+
+  .contact-container{
+    padding-left: calc(1 * var(--icon-gutter));;
+    
+    /* column-gap: .5rem; */
   }
    .project-img video{
     margin: -3rem 0 0 0
